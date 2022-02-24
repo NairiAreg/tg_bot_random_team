@@ -12,10 +12,10 @@ def start(message):
 
     lowerArr = list(map(lambda x: x.lower(),arr))
 
-    if 'nairi' in lowerArr and 'areg' in lowerArr:
-        str = "Nairi - areg\n" if random.random() > 0.5 else "areg - Nairi\n"
+    if 'nairi' in lowerArr and 'iren' in lowerArr:
+        str = "Nairi - Iren\n" if random.random() > 0.5 else "Iren - Nairi\n"
 
-        arr = list(filter(lambda x:x.lower()!='nairi' and x.lower()!='areg', arr))
+        arr = list(filter(lambda x:x.lower()!='nairi' and x.lower()!='iren', arr))
 
     forLength = math.floor(len(arr) / 2)
     for x in range(forLength):
